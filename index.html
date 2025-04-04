@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col h-fu">
+    <!-- هدر -->
+    <header class="bg-[green] shadow-md bg-linear-60 from-blue-600 to-white from-20% ">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <!-- لوگو -->
+          <div class="text-2xl animate-spin font-bold text-gray-800">
+            لوگو
+          </div>
+  
+          <!-- منو برای دسکتاپ -->
+          <nav class=" hidden md:flex space-x-6">
+            <a href="#" class="text-gray-700 hover:text-gray-900">خانه</a>
+            <details class="relative group">
+              <summary class="text-blue-700 hover:text-gray-900  cursor-pointer">
+                خدمات
+              </summary>
+              <div class="absolute bg-white shadow-md mt-2 py-2 w-48 rounded-lg">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۱</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۲</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۳</a>
+              </div>
+            </details>
+            <a href="#" class="text-gray-700 hover:text-gray-900">درباره ما</a>
+            <a href="#" class="text-gray-700 hover:text-gray-900">تماس با ما</a>
+          </nav>
+  
+          <!-- منو برای موبایل -->
+          <details class="md:hidden">
+            <summary class="text-gray-700  hover:text-gray-900 list-none cursor-pointer">
+              <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
+              <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
+              <hr class="w-6 border-2 border-amber-700 rotate-180 mt-1">
+            </summary>
+            <div class="absolute z-10 bg-white shadow-md mt-2 py-2 w-full left-0 right-0">
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خانه</a>
+              <details class="relative">
+                <summary class="block px-4 py-2 text-gray-700 hover:bg-gray-100 list-none cursor-pointer">
+                  خدمات
+  
+                  <span class="text-[15px]">🔻</span>
+  
+                </summary>
+                <div class="pl-4">
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۱</a>
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۲</a>
+                  <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">خدمت ۳</a>
+                </div>
+              </details>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">درباره ما</a>
+              <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">تماس با ما</a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+  
+    <main class="text-center relative p-6 flex-grow  bg-center bg-cover  bg-amber-50  mix-blend-overlay bg-opacity-100">
+      <h1 class="text-2xl text-gray-900">main content </h1>
+  
+  
+      <label for="checkbox1"
+        class="block bg-amber-200 mt-4 p-3 group block  border border-2  rounded-2xl overflow-hidden text-left pl-2"> با استفاده از کلاس  تگ مجاورpeer
+        <input id="checkbox1" type="checkbox" class="peer hidden">
+        <ul
+          class=" bg-amber-200  px-4  transition-all   overflow-hidden h-0  peer-checked:h-50 peer-checked:py-4 ">
+          <li class=" w-50">محتوای تستی1</li>
+          <li class=" w-50">محتوای تستی2</li>
+          <li class=" w-50">محتوای تستی3</li>
+          <li class=" w-50">محتوای تستی4</li>
+          <li class=" w-50">محتوای تستی5</li>
+        </ul>
+      </label>
+      <section 
+      tabindex="1"
+        class="bg-red-200 block  mt-4 p-3 group   border-5 border-red-900 rounded-2xl overflow-hidden text-left pl-2"> با استفاده از کلاس  تگ والد group
+        <ul
+          class=" bg-red-200  px-4  transition-all  overflow-hidden h-0 group-focus:h-50 group-focus:py-4 ">
+          <li class=" w-50">محتوای تستی1</li>
+          <li class=" w-50">محتوای تستی2</li>
+          <li class=" w-50">محتوای تستی3</li>
+          <li class=" w-50">محتوای تستی4</li>
+          <li class=" w-50">محتوای تستی5</li>
+        </ul>
+      </section>
+      <br><br>
+  
+  
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4 border border-2 rounded-2xl overflow-hidden">
+        <div class="bg-red-600 col-span-1 h-24 flex justify-center  items-center">1</div>
+        <div class="bg-green-400 col-span-1 h-24 flex justify-center  items-center">2</div>
+        <div class="bg-yellow-500 col-span-1 h-24 flex justify-center  items-center">3</div>
+        <div class="bg-red-600 col-span-1 h-24 flex justify-center  items-center">1</div>
+        <div class="bg-green-400 col-span-1 h-24 flex justify-center  items-center">2</div>
+        <div class="bg-red-600 col-span-1 h-24 flex justify-center  items-center">1</div>
+        <div class="bg-yellow-500  md:col-span-2 h-24 flex justify-center  items-center">3</div>
+      </div>
+      <br><br>
+  
+      <div class="flex md:flex-row flex-col gap-4 h-24 mt-4 border border-2 rounded-2xl overflow-hidden">
+        <div class="bg-red-600 flex-1 h-full flex justify-center items-center">1</div>
+        <div class="bg-green-400 flex-1 h-full flex justify-center items-center">2</div>
+        <div class="bg-red-200 flex-1 h-full flex justify-center items-center">3</div>
+      </div>
+  
+  
+      <section class="p-4 mt-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+  
+  
+          <!-- تصویر ۳ -->
+          <a id="pigGallery" href="#picBox" class="relative overflow-hidden rounded-lg">
+            <img src="/src/images/sms-asheghane-zemestani.jpg" alt="تصویر ۳" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 group bg-black opacity-50 hover:opacity-10 transition duration-300">
+
+              <p class="text-white text-center opacity-0 group-hover:opacity-100 group-hover:text-amber-300 mt-4    duration-300">
+                توضیحات تصویر 
+              </p>
+            </div>
+          </a>
+  
+        </div>
+      </section>
+
+      <div id="picBox" class="absolute  transition-all duration-700 bg-opacity-50  opacity-0 invisible  target:visible flex target:opacity-100 flex-col justify-center items-center w-full md:w-[80%] py-24 bg-gray-600 bottom-0 left-0 right-0 m-auto rounded-2xl">
+        <img src="/assets/img/02.png" alt="">
+        
+
+        <a href="#pigGallery" class="bg-black rounded-full  p-3 text-2xl border-red-800 border-4">❌</a>
+
+      </div>
+  
+  
+  
+  
+    </main>
+  
+    <footer class="bg-lime-300 text-blue-900 p-6 text-center">
+      footer content ...
+    </footer>
+  </body>
+  </html>
